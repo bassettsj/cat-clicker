@@ -1,7 +1,11 @@
-(function (){
+class Cat {
+    constructor (name) {
+        this.name = name;
+        this.image = getImage
+    }
+}
 
     function Cat (element) {
-        var clicks = 0;
         var img = document.createElement('img');
         var name = element.dataset.catClick;
         var nameElement = document.createElement('h4');
