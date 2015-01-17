@@ -16,16 +16,15 @@
 
     <div class="container">
         <header>
-            <h1 class="page-header">Click the cat</h1>
+            <h1 class="page-header">Cat clicker application</h1>
         </header>
-        <div class="row">
-            <div class="col-xs-6">
-                <div class="thumbnail" data-cat-click="Fluffy"></div>
-            </div>
-            <div class="col-xs-6">
-                <div class="thumbnail" data-cat-click="Tabitha"></div>
-            </div>
-        </div>
+        <main class="row">
+            <aside class="col-md-3">
+                <nav class="list-group" id="catlist"></nav>
+            </aside>
+            <article class="col-md-9" id="catview">
+            </article>
+        </main>
     </div>
     <!-- run javascript at the end -->
     <script src="js/script.js"></script>
