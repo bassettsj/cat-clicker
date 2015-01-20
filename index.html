@@ -8,6 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .is-hidden: {
+        display-none: none;
+      }
+    </style>
     <!--[if lt IE 9]>
         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -24,6 +29,25 @@
             </aside>
             <article class="col-md-9" id="catview">
             </article>
+            <div class="col-md-9" id="catadmin">
+              <button type="button" class="btn btn-default" id="edit">Edit</button>
+              <form aria-hidden="true" class="is-hidden">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" class="form-control" required/>
+                </div>
+                <div class="form-group">
+                  <label for="clicks">Clicks</label>
+                  <input type="number" id="clicks" class="form-control" required/>
+                </div>
+                <div class="form-group">
+                  <label for="picture">Picture</label>
+                  <input type="url" id="picture" class="form-control" required/>
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Save</button>
+                <button type="reset" class="btn btn-primary" id="reset">Reset</button>
+              </form>
+            </div>
         </main>
     </div>
     <!-- run javascript at the end -->
